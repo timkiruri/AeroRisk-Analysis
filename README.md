@@ -1,12 +1,19 @@
 # Aircraft Risk Analysis: Understanding the Risks of an Aircraft Operation Enterprise 
 ![Aircraft Bottom Image](images/aircraft_bottom_in_air.jpg)
 ## Project Overview
-This project looks at the National Transport and Safety Board's civil aviation accident data from 1962 to 2023 and selected in the United States and international waters.
+This project looks at the National Transport and Safety Board's civil aviation accident data from 1962 to 2023 and selected in the United States.
+
+The goal of this analysis is to determine the **safest aircraft** for MyCo to invest in.
 
 ## Busines Understanding
-MyCo is expanding in order to diversifu its business protfolio. MyCo is interested in the aviation industry and in specific the purchasing and operation of airplanes for commercial and private enterprises. 
+MyCo is expanding in order to diversify its business protfolio. MyCo is interested in the aviation industry and in specific the purchasing and operation of airplanes for commercial and private enterprises. 
 
-MyCo has very little understanding about the potential risks of aircrafts and as such an analysis with the aim of determining the aircraft with the lowest risk has been comissioned. The resulting aircraft will be used to start this new business endeavour.
+MyCo has very little understanding about the potential risks of aircrafts and as such an analysis with the aim of determining the aircraft with the lowest risk will be comissioned. The resulting aircraft will be used to start this new business endeavour.
+
+International data was dropped from the analysis for a number of reasons:
+
+1. Compared to the United States data, international accident data had a small sample size i.e. United States (91%) and Others (9%).
+2. To ensure consistency in reporting standards as it was noted that international data used differing reporting formats.
 
 ## Key Business Question & Stakeholders
 The **primary stakeholder** of this analysis and presentation is the Head of the Aviation Division at MyCo. 
@@ -55,6 +62,13 @@ The data contains details on details on aircraft type, weather conditions, accid
 | Schedule              | Whether the flight was scheduled or non-scheduled |
 
 ### Data Cleaning & Preprocessing
+#### Data Preparation
+Latitude and Longitude data was removed from the [subset]('notebooks/01_data_exploration.ipynb) as they were deemed not necessary in the analysis. It was perceived that these contained the latitude and longitude of the accident which would bear limited insights in answering the focus questions.
+Aircraft carrier data was dropped in the [subsetting section]('notebooks/01_data_exploration.ipynb) since airlines often own and operate airplanes based on similar manufacturers which would make it a redundant column to have in the data frame.
+
+#### Data Cleaning
+International accident data was removed as per the reasons stated above.
+
 #### Handling Missing Values
 
 #### Feature Engineering
