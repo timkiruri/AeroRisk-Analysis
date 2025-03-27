@@ -67,11 +67,34 @@ Latitude and Longitude data was removed from the [subset]('notebooks/01_data_exp
 Aircraft carrier data was dropped in the [subsetting section]('notebooks/01_data_exploration.ipynb) since airlines often own and operate airplanes based on similar manufacturers which would make it a redundant column to have in the data frame.
 
 #### Data Cleaning
-International accident data was removed as per the reasons stated above.
+To ensure data integrity and relevance, the dataset underwent the following preprocessing steps:
+
+1. Column Name Standardization: 
+    
+    - I renamed all the column names by replacing all the "." that were used as separators to underscores. This was to maintain consistency in formating standards.
+
+2. Duplicate Removal: 
+
+    - I went through the data looking for duplicates that were in the data. It was great to note that there were no duplicates in the data.
+
+3. Timeframe Adjustment: 
+    - I changed the 'Event_Date' series to datetime and with this created a new series that hosted the 'Year' of the accidents.
+    - When looking at accident distribution by year, I noted that there were very few accidents pre-1982 and as such I decided to drop all rows that were pre-1982.
+
+4. Accident Severity Metric: 
+    - I added a new column that would be used to assess accident severity. This column was formed by summing 'Total_Fatal_Injuries', 'Total_Serious_Injuries', 'Total_Minor_Injuries', 'Total_Uninjured' to find the 'People_Onboard'.
 
 #### Handling Missing Values
+In this section I took the following steps to ensure that I have all the data I need:
+
+1. Removed records where 'Make' and 'Model' fields were missing to maintain aircraft classification accuracy.
+
+2. Dropped entries with unknown or missing weather conditions, as weather is a critical factor in accident analysis.
 
 #### Feature Engineering
+1. Location refining:
+
+    - I extracted state abbreviations from the 'Location' series with the aim of merging these with an external dataset containing all the US States and their abbreviations. This would help enhance location-based insights
 
 ### Exploratory Data Analysis & Visualisations
 
