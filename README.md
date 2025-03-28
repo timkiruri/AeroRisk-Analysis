@@ -96,7 +96,29 @@ In this section I took the following steps to ensure that I have all the data I 
 
     - I extracted state abbreviations from the 'Location' series with the aim of merging these with an external dataset containing all the US States and their abbreviations. This would help enhance location-based insights
 
+2. Fatality Rate
+    - I created added a series called 'People_Onboard' by summing the series: 'Total_Fatal_Injuries', 'Total_Serious_Injuries', 'Total_Minor_Injuries', 'Total_Uninjured' to find the 'People_Onboard'.
+    - I used this to calculate the proportion of injuries that were fatal and mapped this onto another series named 'Fatal_%' which I then used to calculate the severity of the accident.
+
 ### Exploratory Data Analysis & Visualisations
+#### Accident Counts and Average Fatality Rate
+
+The bar plots look at and compare aircraft makes based on their **average fatality rate** and **total accident count** for manufacturers with at lease 100 recorded accidents.
+
+##### 1. Average Fatality by Make
+---
+![Average Fatality by Manufactuers](images/avg_fatality_by_make.png)
+-
+In this plot, we see that **Cirrus Design Corp.** has the highest average fatality rate. This means that crashes involving Cirrus aircrafts are more likely to be deadly.
+
+Manufacturers on the left (like **Grumman-Schweizer, Lake and Beech**) have relatively lower fatality rates. Generally meaning that they are safer.
+
+##### 2. Accident Count by Make
+---
+![Accident Count by Make](images/accident_count_by_make.png)
+---
+**Piper** and **Cessna** have the highest accident counts by a huge margin. This likely reflects on their high production volumes and widespread use particularly in personal and instructional cases.
+![Cessna Piper Use Purpose](images/cessna_piper_prupose.png)
 
 ## Key Findings
 
