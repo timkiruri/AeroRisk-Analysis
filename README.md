@@ -131,6 +131,23 @@ Manufacturers on the left (like **Grumman-Schweizer, Lake and Beech**) have rela
 **Piper** and **Cessna** have the highest accident counts by a huge margin. This likely reflects on their high production volumes and widespread use particularly in personal and instructional cases.
 ![Cessna Piper Use Purpose](images/cessna_piper_prupose.png)
 
+#### Engine Type by Fatality
+---
+![Engine Type Fatality Categories Combo Plot](images/engine_type_fatality_categories.png)
+---
+##### 1. Engine Type vs Accident Fatality
+---
+![Engine Type Fatality](images/engine_type_fatality.png)
+---
+**Electric and Turbo Jet Engines** have the highest average fatality per accident. This is with the Electric engines leading.
+**Reciprocating and Turbo Shaft engines** show the lowest fatality averages, suggesting that accidents involving these engine types are less deadly on average.
+
+##### 2. Engine Type Accident Category
+---
+![Engine Type Accident Category](images/engine_type_accident_category.png)
+---
+**Turbo Shaft, Reciprocating and Turbo Fan engines** have a higher proportion of **Non-Fatal** Accidents; these are over 80%. This indicates that they are generally safer in terms of survivability.
+
 ## Key Findings
 
 ## Business Recommendations
