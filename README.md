@@ -84,6 +84,17 @@ To ensure data integrity and relevance, the dataset underwent the following prep
 4. Accident Severity Metric: 
     - I added a new column that would be used to assess accident severity. This column was formed by summing 'Total_Fatal_Injuries', 'Total_Serious_Injuries', 'Total_Minor_Injuries', 'Total_Uninjured' to find the 'People_Onboard'.
 
+5. Engine Type Cleaning:
+    - I removed rows where Engine_Type was **UNK** or **Uknown**.
+
+6. 'Injury_Severity' Cleaning:
+    - Under Injury_Severity, I removed rows where Injury_Severity was 'Unavailable'
+    - I also standardised values to **Fatal** or **Unfatal** by:
+        
+        1. Replacing **'Minor'** with 'Non-Fatal'
+        2. Replacing **'Serious** with 'Fatal'
+        3. Converting any value starting with 'Fatal' i.e. 'Fatal(3)' into 'Fatal' 
+
 #### Handling Missing Values
 In this section I took the following steps to ensure that I have all the data I need:
 
