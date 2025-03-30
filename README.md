@@ -176,5 +176,25 @@ The decrease in accident counts, however, isn't perfectly smooth; some years saw
 This suggests that aviation safety has improved over time.
 
 ## Key Findings
+### Industry-Wide Safety Trends
 
-## Business Recommendations
+The Aviation Industry has seen significant safety improvements over time, with accident counts decreasing due to advancements in technology, strickter regulations and pobbily even pilot training.
+
+The proportion of non-fatal accidents has increased thus indicating that modern aircrafts are more survivable in crashes. In the 1980s-1990s, non-fatal accident rates were around 80%-82%, but by 2020-2022, they had risen to 88.6% and 93.9% respectively.
+
+### Aircraft Make & Safety
+
+Grumman-Schweizer, Lake, and Beech aircraft have the lowest average fatality rates, making them some of the safest options based on historical accident data.
+
+### Amateur vs. Professionally Built Aircraft
+Amateur-built aircrafts have a fatal accident rate of 26.2% compated to a 16.8% for professionally-built aircraft. This could imply, higher structural, design or operational risks in amateur-built aircrafts.
+
+Avoiding amateur-built aircrafts would be the way to go for MyCo.
+
+### Engine Type Considerations
+
+Turbo Shaft, Reciprocating, and Turbo Fan engines are associated with the highest proportion of non-fatal accidents, implying that aircraftd powered by these engines tend to have better survival outcomes.
+
+Electric and Turbo Jet engines have the highest average fatality rates per accident, indicating that crashes involving these engine types are more dangerous.
+
+If MyCo prioritizes passenger safety, it should focus on aircraft with reciprocating or turbo shaft engines for their initial operations.
