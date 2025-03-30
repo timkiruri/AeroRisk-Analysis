@@ -26,15 +26,12 @@ We will answer the primary question by answering the following questions:
 
 ### Technical Questions
 1. Which aircraft models have the lowest accident rates and the fewest fatal injuries? 
-2. How does the number of engines correlate with accident severity?
-3. How do accident rates vary by aircraft category across different weather conditions?
-4. What are the most common causes of accidents based on the broad phase of the flight? 
+2. What are the most common causes of accidents based on the broad phase of the flight? 
     
 ### Business Questions
 1. Which aircraft manufacturers have the best safety records based on accident severity and total injuries?
-2. How do scheduled vs. non-scheduled flights compare in terms of frequency and severity of accidents?
-3. What is the trend of aircraft accidents over time and what does this indicate for future investments?
-4. Are amateur-built aircrafts significantly riskier compared to professionally built aircrafts.
+2. What is the trend of aircraft accidents over time and what does this indicate for future investments?
+3. Are amateur-built aircrafts significantly riskier compared to professionally built aircrafts.
 
 ## Data Understanding and Analysis
 ### Data Source
@@ -147,6 +144,36 @@ Manufacturers on the left (like **Grumman-Schweizer, Lake and Beech**) have rela
 ![Engine Type Accident Category](images/engine_type_accident_category.png)
 ---
 **Turbo Shaft, Reciprocating and Turbo Fan engines** have a higher proportion of **Non-Fatal** Accidents; these are over 80%. This indicates that they are generally safer in terms of survivability.
+
+#### Amateur vs Professionally built Aircrafts
+![Amateur vs Professional](images/amateur_built_fatality.png)
+---
+Amateur-built aircrafts have a generally higher fatality rate compared to professionally-built ones.
+
+- The proportion of fatal accidents in anateur-built aircrafts is 26.2% compared to 16.8% for non-amateur. Indicating that crashes involving amateur-built aircrafts are more likely to result in fatalities.
+
+- The increased fatality proportion in amateur-built aircrafts may indicate **structural, design or operational risks** associated with these planes.
+
+- Possible drivers of this observation would be: pilot experience, build quality, maintenance standards or operational conditions.
+
+Non-fatal incidents are the majority in both categories:
+- In as much as both have risk associated with them, non-amateur aircrafts have a higher survival rate of 83.2% copmared to 73.8% in its counterpart.
+
+#### Accident Severity Trend
+![Accident Non-Fatality Trend](images/accident_non_fatality_trend.png)
+---
+There has been a general increase in accident non-fatality i.e. the proportion of non-fatal accidents has increased over time.
+
+In the 1980s and 1990s, non-fatality rates hovered around 80%-82%. By the 2010s and the 2020s, non-fatal accidents climbed above 83%-*4%, even reaching 88.6% in 2020 and 93.9% in 2022.
+
+#### Accident Count Trend
+![Accident Count Trend](images/accident_trend_years.png)
+---
+There is an overall imporvement in aviation safety over time. This is possibly due to better regulations, improved aircraft technology and enhanced pilot training.
+
+The decrease in accident counts, however, isn't perfectly smooth; some years saw slight increases in accidents. FOr example, in 1995 after a steady drop from 1992 to 1994. Similarly, 2003 and 1005 saw small bumps before continuing the downward trend.
+
+This suggests that aviation safety has improved over time.
 
 ## Key Findings
 
